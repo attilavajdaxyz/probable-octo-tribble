@@ -33,3 +33,11 @@ a {
 a:hover {
   background-color: gold;
 }
+
+.gradient-box {
+  width: 70%;
+  height: 70vh;
+  background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+  border-radius: 10px;
+  border: 10px solid dodgerblue;
+}
