@@ -6,8 +6,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
+    <!--   fevrier 13   -->
+    <p><a href="this is a page">I made with React using the React template at the React docs site</a></p>
+    <h1>good enough 🏖</h1>
+    <p>how do I insert a module here? - you can insert it using HTML as above with anchor tag, or writing into this HTML doc</p>
+    <p>for example: </p>
+      <div id="root"></div>
+    <script type="text/babel">
+      let object = { 'a': 1, 'b': 2, 'c': 3}
+
+      function MyButton() {
+          return (object.a === 2) ? (
+              <button>
+                Click Me!
+              </button>
+          )
+          : (
+              <button>
+                {'Hello World!'.match(/\b\w+\b/)[0]}
+              </button>
+          )
+      }
+
+      ReactDOM.render(
+        <>
+            <h1>Hello, world!</h1>
+            <img src="images/yoga-nidra.jpg" />
+            <p>Yoga nidra or yogic sleep is a state of consciousness between waking and sleeping, like the "going-to-sleep" stage, typically induced by a guided meditation.</p>
+            <MyButton />
+        </>,
+        document.getElementById('root')
+      );
+
+    </script>
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this section for a production-ready setup with JSX:
+      https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
+
+      In a larger project, you can use an integrated toolchain that includes JSX instead:
+      https://reactjs.org/docs/create-a-new-react-app.html
+
+      You can also use React without JSX, in which case you can remove Babel:
+      https://reactjs.org/docs/react-without-jsx.html
+    
+    
     <!--   fevrier 12   -->
     <section style="height: 90vh; width: 90%; background-color: dodgerblue;">
       <h1 style="font-size: 200px;" class="title-of-page">WALNUT - 😌</h1>
