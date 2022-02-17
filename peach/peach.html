@@ -12,9 +12,14 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-
+      const JSX = (
+        <h1>Hello, world!</h1>
+        <h1 className="fruit">blueberry, almonds, bananas, grapes</h1>
+        <p className="plants">trees, shrubs, pine, nightshade</p>
+      )
+      
       ReactDOM.render(
-        <h1>Hello, world!</h1>,
+        JSX,
         document.getElementById('root')
       );
 
