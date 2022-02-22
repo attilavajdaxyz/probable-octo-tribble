@@ -52,7 +52,12 @@
         </div>
       );
       
-      ReactDOM.Render(<AdminPanel />, document.getElementById('reactDiv')
+      ReactDOM.Render(
+        <>
+          <AdminPanel />
+        </>, 
+        document.getElementById('reactDiv')
+      )
     </script>
     
     
