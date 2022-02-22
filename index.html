@@ -14,8 +14,33 @@
   </head>
   <body>
     <!--   fevrier 22   -->
+    <div id="reactDiv"></div>
+    
     <script type="text/babel">
+      function AdminPanel() {
+        return (
+          <>
+            <img className="miles" src="http://mediad.publicbroadcasting.net/p/wmuk/files/styles/x_large/public/201611/MilesDavis3.jpg" />
+            <input type="radio">radio</input>
+            <input type="checkbox">checkbox</input>
+          </>
+        )
+      }
+      
+      function LoginForm() {
+        return (
+          <>
+            <h1 class="login-title>login form</h1>
+            <button>Login</button>
+            <p class="emoji">🏄🏻‍♂️</p>
+          </>
+        )
+      }
+      
+      
+      let isLoggedIn = 1;
       let content;
+      
       if (isLoggedIn) {
         content = <AdminPanel />;
       } else {
@@ -26,6 +51,8 @@
           {content}
         </div>
       );
+      
+      ReactDOM.Render(<AdminPanel />, document.getElementById('reactDiv')
     </script>
     
     
