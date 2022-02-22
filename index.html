@@ -39,22 +39,24 @@
       
       
       let isLoggedIn = 1;
-      let content;
       
-      if (isLoggedIn) {
-        content = <AdminPanel />;
-      } else {
-        content = <LoginForm />;
+      function MyFunction() {
+        let content;
+        if (isLoggedIn) {
+          content = <AdminPanel />;
+        } else {
+          content = <LoginForm />;
+        }
+        return (
+          <div>
+            {content}
+          </div>
+        );
       }
-      return (
-        <div>
-          {content}
-        </div>
-      );
       
       ReactDOM.Render(
         <>
-          <AdminPanel />
+          <MyFunction />
         </>, 
         document.getElementById('reactDiv')
       )
