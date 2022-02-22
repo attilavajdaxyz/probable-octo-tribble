@@ -15,6 +15,21 @@
   <body>
     <!--   fevrier 22   -->
     <script type="text/babel">
+      let content;
+      if (isLoggedIn) {
+        content = <AdminPanel />;
+      } else {
+        content = <LoginForm />;
+      }
+      return (
+        <div>
+          {content}
+        </div>
+      );
+    </script>
+    
+    
+    <script type="text/babel">
       const user = {
         name: 'Hedy Lamarr',
         imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
