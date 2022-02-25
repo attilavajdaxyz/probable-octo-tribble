@@ -1,5 +1,0 @@
-function booWho(bool) {
-  return /boolean/.test(typeof bool)
-}
-
-booWho(false);
