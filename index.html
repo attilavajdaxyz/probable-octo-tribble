@@ -13,6 +13,26 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
+    <!--   ven 25 fevrier   -->
+    <script type="text/babel">
+      const products = [
+        { title: 'Cabbage', id: 1 },
+        { title: 'Garlic', id: 2 },
+        { title: 'Apple', id: 3 },
+      ];
+      
+      const listItems = products.map(product =>
+        <li key={product.id}>
+          {product.title}
+        </li>
+      );
+
+      return (
+        <ul>{listItems}</ul>
+      );
+      
+    </script>
+    
     <!--   mer 23 fevrier   -->
     <!--   this is an occasion to debug my blog, website, because a number of things don't work   -->
     <script type="text/babel">
@@ -27,7 +47,7 @@
       }
       export default Index;
     </script>
-    
+      
     
     
     <!--   fevrier 22   -->
